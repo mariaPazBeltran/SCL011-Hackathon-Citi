@@ -31,7 +31,6 @@ const Login = ()=> {
     <div className="login_container">
         <h3>inicio de sesión</h3>
       <div className='container_email'>
-          
           <input onChange={onChangeEmail} className='inputs' type='email' placeholder='email'/>
       </div>
       <div className='container_password'>
@@ -39,6 +38,7 @@ const Login = ()=> {
           <input onChange={onChangePassword} className='inputs' type='password' placeholder='contraseña'/>
       </div>
       <button onClick={logIn}>Iniciar</button>
+
     </div>
   );
 }

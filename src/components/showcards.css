@@ -1,0 +1,44 @@
+.showCards{
+    color:white;
+    background-image: url(../images/tarjetamuestra.png);
+    background-attachment: local;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: auto;
+    width: 95%;
+    margin:8px;
+    padding: 5px; 
+   
+}
+.add-card{
+    margin: 10px;
+    padding: 10px;
+}
+.background-card{
+height: auto;
+width: 95%;
+/* position: relative; */
+}
+.card-info{
+    /* position: absolute; */
+    z-index: 100;
+    display: flex;
+
+}
+.info-display{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.btn-show{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.btn-action{
+    border: 0;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+
+}

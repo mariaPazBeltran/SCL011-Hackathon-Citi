@@ -13,6 +13,7 @@ firebase.initializeApp({
   });
 
 let db = firebase.firestore();
+
 export let auth = firebase.auth();
 
 export default db;

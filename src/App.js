@@ -5,6 +5,8 @@ import './App.css';
 import Login from './components/Login';
 import { auth } from 'firebase';
 import Pin from './components/pin/Pin';
+import CardInfo from './components/Card';
+import ShowCard from './components/showCards';
 
 function App() {
   return (
