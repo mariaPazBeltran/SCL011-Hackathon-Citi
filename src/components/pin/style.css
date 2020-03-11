@@ -31,6 +31,9 @@
     background-color: transparent;
     color: #FFFFFF;
   }
+  .ok a{
+    color: #FFFFFF;
+  }
   @media screen and (max-width: 430px){
     .pin_cont{
         padding: 1em;
@@ -44,9 +47,10 @@
         min-height: 14vh;
         min-width: 14vh;
       }
-      .h3_pin{
-          font-size: 2rem;
-      }
+      
   }
-
+  @media screen and (max-width: 320px){
+    .pin_cont, .ol_pin{
+        padding: .5em;}
+  }
   

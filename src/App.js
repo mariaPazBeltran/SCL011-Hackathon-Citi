@@ -5,19 +5,21 @@ import './App.css';
 import Login from './components/Login';
 import { auth } from 'firebase';
 import Pin from './components/pin/Pin';
-import CardInfo from './components/Card';
 import ShowCard from './components/showCards';
+import CardData from './components/Card';
 
 function App() {
   return (
     <div className="App">
       <Router>
     <Route exact path="/">
-  {auth ? <Redirect to="/Pin" /> : <Login/>}
+  {auth ? <Redirect to="/pin" /> : <Login/>}
 </Route>
         
         <Route path="/pin" component={ Pin } />
-        
+        <Route path="/cardata" component={ CardData } />
+        <Route path="/home" component={ ShowCard } />
+
     </Router>
     </div>
   );
