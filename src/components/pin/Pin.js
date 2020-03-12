@@ -7,26 +7,18 @@ class Pin extends Component {
         super(props);
     
         this.state = {
-          pinPad: ''
+          pinPad: '',
         }
       }
+     
       addPassword = e => {
          const num = e.target.value
          
         return this.state.pinPad.length === 4 ? '' : this.setState({pinPad: this.state.pinPad + num});
      }
-  /*  const [pinPad, setPinPad] = useState([]);
-    const addPassword = (val) => {
-        let number = val.target.value
-        console.log(number)
-        
-        return pinPad.length === 4 ? '' : pinPad.push(number);
-     }
-    */
-   
    render(){
     const digit = this.state.pinPad.replace(/[1234567890]/gi, '*')
-      
+   
     return (
         <div className='container_pin'>
            <div className='pin_cont'>
