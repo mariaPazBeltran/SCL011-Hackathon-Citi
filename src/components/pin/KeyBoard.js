@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './style.css';
-import {Link} from 'react-router-dom';
 
 class KeyBoard extends Component{
     render(){
@@ -22,9 +21,7 @@ class KeyBoard extends Component{
                 <button value={9} onClick={this.props.clickButton}>9</button>
               </div>
               <div className="keyboard_tabs">
-                  <button></button>
                   <button value={0} onClick={this.props.clickButton}>0</button>
-                  <Link to='/home'><button className='ok'>ok</button></Link>
                 </div>
         
             </div>

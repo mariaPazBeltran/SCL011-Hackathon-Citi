@@ -23,7 +23,7 @@ width: 95%;
     /* position: absolute; */
     z-index: 100;
     display: flex;
-
+    color: white;
 }
 .info-display{
     display: flex;
@@ -37,8 +37,9 @@ width: 95%;
 }
 .btn-action{
     border: 0;
-    background-color: #ffffff;
+    background-color: #1F45CB;
     padding: 20px;
     border-radius: 10px;
+    color:white;
 
 }

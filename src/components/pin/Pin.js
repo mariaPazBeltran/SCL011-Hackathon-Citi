@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './style.css';
 import KeyBoard from './KeyBoard';
+import {Link} from 'react-router-dom';
+
 
 class Pin extends Component {
     constructor(props) {
@@ -29,7 +31,8 @@ class Pin extends Component {
             <KeyBoard
             clickButton={this.addPassword}/>
             <div className='ol_pin'>
-                <p className='p_pin'>Olvidé mi pin</p>
+                <a className='p_pin'>Olvidé mi pin</a>
+                <Link className="ok" to='/home'><a className='ok'>Confirmar</a></Link>
 
             </div>
         

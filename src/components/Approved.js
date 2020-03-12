@@ -2,6 +2,8 @@ import React, { Component, useEffect, useState } from 'react';
 import db from '../firebase-config/firebase';
 import './approved.css';
 import './confirmation.css';
+import {Link} from 'react-router-dom';
+
 
 class ApprovedPay extends Component {
     constructor(props) {
@@ -66,7 +68,9 @@ class ApprovedPay extends Component {
                         })}
                         
                     <p>{this.state.date}</p>
+                    <Link to='/home'>
                     <button className="btn-end">Finalizar</button>
+                    </Link>
                 </div>
             </div>
         )
