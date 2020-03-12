@@ -1,0 +1,56 @@
+/*pin & keyboard*/
+.container_pin{
+    margin-top: 0px;
+    background-image: linear-gradient(180deg, #2954ED 0%, #001665 100%);
+    height: 100%;
+  }
+  .pin_cont{
+    margin-top: 0px;
+    padding: .5em;}
+  .h3_pin{
+    margin-top: 0px;
+  }
+  .p_pin, .h3_pin{
+    
+    color: #FFFFFF;
+  }
+  .pin{
+    font-size: 6vh;
+    min-height: 8vh;
+    color: #FFFFFF;
+  }
+  .ol_pin{
+   padding: 1em;
+  }
+  .keyboard_tabs button{
+    min-height: 16vh;
+    min-width: 16vh;
+    font-size: xx-large;
+    font-weight: bold;
+    border: none;
+    background-color: transparent;
+    color: #FFFFFF;
+  }
+  .ok a{
+    color: #FFFFFF;
+  }
+  @media screen and (max-width: 430px){
+    .pin_cont{
+        padding: 1em;
+    }
+  }
+  @media screen and (max-width: 375px)and (min-width: 330px){
+    .pin_cont{
+        padding: 2em;
+    }
+    .keyboard_tabs button{
+        min-height: 14vh;
+        min-width: 14vh;
+      }
+      
+  }
+  @media screen and (max-width: 320px){
+    .pin_cont, .ol_pin{
+        padding: .5em;}
+  }
+  

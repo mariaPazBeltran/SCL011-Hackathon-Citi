@@ -3,11 +3,17 @@
 }
 
 .login_container{
-
+  margin-top: 50%;
 }
-.container_email{
-
+.login_container button{
+  width: 50%;
+  height: 8vh;
+  font-size: x-large;
 }
-.container_password{
-  
+.container_email, .container_password{
+  margin-bottom: 5%;
+}
+.inputs{
+  width: 80%;
+  height: 10vh;
 }
