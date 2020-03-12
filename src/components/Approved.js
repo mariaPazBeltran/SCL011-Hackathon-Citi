@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect, useState } from 'react';
+import db from '../firebase-config/firebase';
 import './approved.css';
 import './confirmation.css';
 
@@ -7,18 +8,46 @@ class ApprovedPay extends Component {
         super(props);
         this.state = {
             date: '',
+            datos: []
         }
     }
+    // function(){
+    // const [charge, setCharge] = useState([])
+
+    // useEffect(() => {
+    //     db
+    //       .collection("PinInfo")
+    //       .onSnapshot((snapshot) => {
+    //         const newCharge = snapshot.docs.map((doc) => ({
+    //           id: doc.id,
+    //           ...doc.data()
+    //         }))
+    //         setCharge(newCharge)
+    //       })
+    
+    //   }, [])
+    // }
     componentDidMount() {
+
+        db.collection("PinInfo")
+              .onSnapshot((snapshot) => {
+                this.setState({datos: snapshot.docs.map((doc) => ({
+                    id: doc.id,
+                    ...doc.data()
+                  }))
+                  })
+              })
         // let day = new Date().getDay(); 
         let date = new Date().getDate();
         let month = new Date().getMonth() + 1;
         let year = new Date().getFullYear();
         this.setState({
             date: date + " / " + "0" + month + " / " + year
-        })
-    }
-
+        })          
+        console.log(this.state.datos);
+        }
+    
+    
     render() {
         return (
             <div>
@@ -32,7 +61,10 @@ class ApprovedPay extends Component {
                     </div>
                     <h4>Tu pago se ha <br></br>
                         realizado con éxito</h4>
-                    <p className="price-display"> $ 5460</p>
+                        {this.state.datos.map((val, index)=>{
+                            return <p key={index} className="price-display"> ${val.charge}</p>
+                        })}
+                        
                     <p>{this.state.date}</p>
                     <button className="btn-end">Finalizar</button>
                 </div>
