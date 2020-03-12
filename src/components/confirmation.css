@@ -16,9 +16,15 @@
 }
 .btn-option2{
 background-color: #A7B5E6;
-
+color: white;
+padding: 20px;
+border-radius: 10px;
+border: 0;
 }
 .price-display{
     font-size: 50px;
     margin: 0;
+}
+.padd{
+    padding: 9px;
 }
