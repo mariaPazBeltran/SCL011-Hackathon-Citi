@@ -8,7 +8,7 @@ function ShowCard(){
 
     useEffect(() => {
         db
-          .collection("CardInfo")
+          .collection("PinInfo")
           .onSnapshot((snapshot) => {
             const newCard = snapshot.docs.map((doc) => ({
               id: doc.id,

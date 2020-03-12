@@ -3,7 +3,6 @@ import './confirmation.css';
 import db from '../firebase-config/firebase';
 import { Link } from 'react-router-dom';
 
-
 function Confirmation() {
     const [charge, setCharge] = useState([])
 
