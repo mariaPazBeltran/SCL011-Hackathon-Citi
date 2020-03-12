@@ -1,0 +1,22 @@
+.pay-receipt{
+    background-color: #ffffff;
+    height: 280px;
+    margin: 20px;
+    padding-top: 10px;
+}
+.confirmed{
+    background-color: #1F45CB;
+    border-radius: 50%;
+    padding: 25px;
+}
+.btn-end{
+    color: #ffffff;
+    background-color: #1F45CB;
+    padding: 8px;
+    border-radius: 10px; 
+    border:none;   
+    width:95%;
+    height: 60px;
+    font-size: 16px;
+    font-weight: bold;
+}

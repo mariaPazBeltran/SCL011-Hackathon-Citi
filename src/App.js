@@ -5,6 +5,7 @@ import CardInfo from './components/Card';
 import ShowCard from './components/showCards';
 import PinCode from './components/Pincode';
 import Confirmation from './components/Confirmation';
+import ApprovedPay from './components/Approved';
 
 
 function App() {
@@ -12,7 +13,8 @@ function App() {
     <div className="App">
       {/* <Login/>
       <PinCode/>      */}
-      <Confirmation/>
+      {/* <Confirmation/> */}
+      <ApprovedPay/>
     </div>
   );
 }

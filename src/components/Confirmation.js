@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import './confirmation.css';
+import { Link } from 'react-router-dom';
+
+
 class Confirmation extends Component{
 
 
@@ -79,6 +82,7 @@ class Confirmation extends Component{
 </svg><br></br>
     Rechazar Pago
 </button>
+{/* <Link to='/approved'> */}
 <button className="btn-option">
 <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M22 1.83333C33.1222 1.83333 42.1667 10.8778 42.1667 22C42.1667 33.1222 33.1222 42.1667 22 42.1667C10.8778 42.1667 1.83333 33.1222 1.83333 22C1.83333 10.8778 10.8778 1.83333 22 1.83333ZM22 0C9.83889 0 0 9.83889 0 22C0 34.1611 9.83889 44 22 44C34.1611 44 44 34.1611 44 22C44 9.83889 34.1611 0 22 0Z" fill="white"/>
@@ -86,6 +90,7 @@ class Confirmation extends Component{
 </svg><br></br>
     Autorizar Pago
 </button>
+{/* </Link> */}
 </div>
             </div>
         )
