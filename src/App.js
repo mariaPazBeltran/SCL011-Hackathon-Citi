@@ -11,10 +11,7 @@ import ApprovedPay from './components/Approved';
 function App() {
   return (
     <div className="App">
-      {/* {/* <Login/> */}
-       {/* <PinCode/>   */}
-     {/* <Confirmation/>  */}
-      <ApprovedPay/> 
+       <Login/>
     </div>
   );
 }
