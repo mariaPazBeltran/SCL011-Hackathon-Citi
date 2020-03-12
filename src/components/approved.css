@@ -1,8 +1,9 @@
 .pay-receipt{
     background-color: #ffffff;
-    height: 280px;
-    margin: 20px;
-    padding-top: 10px;
+    border-radius: 10px;
+    height: 340px;
+    margin: 60px 20px 20px 20px;
+    padding-top: 20px;
 }
 .confirmed{
     background-color: #1F45CB;
@@ -19,4 +20,8 @@
     height: 60px;
     font-size: 16px;
     font-weight: bold;
+}
+.approved-logo{
+    z-index: 1000;
+    margin-top: -60px;
 }

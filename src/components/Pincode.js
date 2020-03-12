@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './pincode.css';
 import db from '../firebase-config/firebase';
-import TimerStart from './Timer';
+import Timer from 'react-compound-timer/build';
 const gpc = require('generate-pincode')
 
 
@@ -10,7 +10,7 @@ class PinCode extends Component{
     constructor(props){
         super(props);
         this.state = {
-            pin:''
+            pin:'',
         }
 
     }
@@ -41,18 +41,36 @@ class PinCode extends Component{
 
     render(){
     return(
-        <div>
         <div className="pin-code-view">
             <h3>Clave Dinámica</h3>
             <p className="pin-info">Genera una clave dinámica para autorizar la transacción</p>
             <p className="pin-code" id="pincode">{this.state.pin}</p>
             <h3>Tu clave expirará en</h3>
-            <div className="display-btn">
-            <button onClick={() =>{this.newPin()}} className="btn-pin">Generar Clave</button>
+            <div>
+            <Timer
+        initialTime={180000}
+        direction="backward"
+        startImmediately={false}
+
+    >
+        {({ start }) => (
+            <React.Fragment>
+                <div className="timer-style">
+                   0<Timer.Minutes /> :
+                    <Timer.Seconds /> 
+                </div>
+                <br />
+                <div>
+                    <div className="display-btn">
+                    <button onClick={() =>{{this.newPin()}; {start()}}} className="btn-pin">Generar Clave</button>
+                    </div>
+
+                </div>
+            </React.Fragment>
+        )}
+    </Timer>
             </div>
         </div>  
-         {/* <TimerStart /> */}
-        </div>
 
 
     )
