@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './pincode.css';
-import db from '../firebase-config/firebase';
+//import db from '../firebase-config/firebase';
 import Timer from 'react-compound-timer/build';
 import './menu.css';
 import {Link} from 'react-router-dom';
@@ -21,15 +21,14 @@ class PinCode extends Component{
         this.setState({
             pin: pinCode,
         })
-            db.collection('PinInfo').add({
-            name:'Elena',
-            balance:200000,
-            pin:pinCode
-            })
+            // db.collection('PinInfo').add({
+            // name:'Elena',
+            // balance:200000,
+            // pin:pinCode
+            // })
     }
     
     componentDidMount() {
-        
         clearInterval(this.timerID);
         this.timerID = setInterval(
           () => this.update(),

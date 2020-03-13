@@ -9,7 +9,7 @@ function ShowCard(){
 
     useEffect(() => {
         db
-          .collection("CardInfo")
+          .collection("PinInfo")
           .onSnapshot((snapshot) => {
             const newCard = snapshot.docs.map((doc) => ({
               id: doc.id,
@@ -46,9 +46,9 @@ function ShowCard(){
 <path d="M22.5 58.0851V61.0638H16.5V58.0851H22.5Z" fill="white"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M28.5 44.6809C26.8431 44.6809 25.5 46.0144 25.5 47.6596V67.0213C25.5 68.6664 26.8431 70 28.5 70H57C58.6568 70 60 68.6664 60 67.0213V47.6596C60 46.0144 58.6569 44.6809 57 44.6809H28.5ZM57 52.1277V47.6596H28.5V52.1277H57ZM28.5 67.0213V56.5957H57V67.0213H28.5Z" fill="white"/>
 </svg>
+
 </Link>   
  <br></br>
- 
             Comprar</button>  
             <button className="btn-action">
         <svg width="57" height="66" viewBox="0 0 57 66" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -60,7 +60,6 @@ function ShowCard(){
 <path fill-rule="evenodd" clip-rule="evenodd" d="M19.5 22.5H57V45H19.5V22.5ZM25.5 25.5H51L54 28.5V39L51 42H25.5L22.5 39V28.5L25.5 25.5Z" fill="white"/>
 </svg><br></br>
             Pagar online</button>        
-
         </div>
         </div>
         <div className="container-menu">

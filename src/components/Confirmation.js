@@ -3,7 +3,6 @@ import './confirmation.css';
 import db from '../firebase-config/firebase';
 import { Link } from 'react-router-dom';
 
-
 function Confirmation() {
     const [charge, setCharge] = useState([])
 
@@ -17,10 +16,8 @@ function Confirmation() {
                 }))
                 setCharge(newCharge)
             })
-
     }, [])
-
-
+  
     return (
         <div>
             <h3>Autorización</h3>
@@ -46,6 +43,7 @@ function Confirmation() {
                         <g opacity="0.3">
                             <path opacity="0.3" d="M7.94971 118.19C7.24115 118.19 6.65356 117.599 6.65356 116.885V114.101C6.65356 113.387 7.24115 112.796 7.94971 112.796C8.65827 112.796 9.24585 113.387 9.24585 114.101V116.885C9.24585 117.599 8.65827 118.19 7.94971 118.19Z" fill="#1F45CB" />
                             <path opacity="0.3" d="M7.94971 107.749C7.24115 107.749 6.65356 107.158 6.65356 106.444V103.312C6.65356 102.599 7.24115 102.007 7.94971 102.007C8.65827 102.007 9.24585 102.599 9.24585 103.312V106.444C9.24585 107.158 8.65827 107.749 7.94971 107.749Z" fill="#1F45CB" />
+
                         </g>
                     </g>
                     <g opacity="0.3">
