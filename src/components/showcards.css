@@ -6,7 +6,7 @@
     background-size: contain;
     height: auto;
     width: 95%;
-    margin:8px;
+    margin:4px;
     padding: 5px; 
    
 }
@@ -27,13 +27,14 @@ width: 95%;
 }
 .info-display{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: row;;
+    width: 100%;
+    margin-top: -10px;
+
 }
 .btn-show{
     display: flex;
     justify-content: space-evenly;
-
 }
 .btn-action{
     border: 0;

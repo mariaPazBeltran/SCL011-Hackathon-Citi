@@ -1,0 +1,21 @@
+.container-menu{
+background-color: #1F45CB;
+border-radius: 25px 25px 0 0;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+bottom: 0;
+position: fixed;
+width: 100%;
+}
+
+.vector-direction{
+    background-color: transparent;
+    border: none;
+}
+.vector-menu{
+    background-color: transparent;
+    border: none;
+    z-index: 1000;
+    margin-top: -15px;
+}

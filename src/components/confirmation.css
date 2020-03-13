@@ -22,9 +22,12 @@ border-radius: 10px;
 border: 0;
 }
 .price-display{
-    font-size: 50px;
+    font-size: 40px;
     margin: 0;
 }
 .padd{
     padding: 9px;
+}
+.marg{
+    margin-top: 3px;
 }
