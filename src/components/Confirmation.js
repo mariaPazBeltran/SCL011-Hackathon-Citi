@@ -83,12 +83,12 @@ function Confirmation() {
                     <path opacity="0.5" d="M167.704 83.8051C166.995 83.8051 166.408 83.2135 166.408 82.5C166.408 80.0986 166.304 77.6798 166.096 75.2958C165.924 73.3469 165.682 71.3805 165.371 69.4664C165.25 68.7529 165.734 68.0917 166.442 67.9698C167.151 67.848 167.807 68.3353 167.928 69.0487C168.257 71.0325 168.516 73.0684 168.689 75.0696C168.913 77.5232 169.017 80.029 169.017 82.5174C169 83.2309 168.412 83.8051 167.704 83.8051Z" fill="#1F45CB" />
                 </g>
             </svg>
-            <h4>Supermercado Tottus</h4>
+            <h4 className="marg">Supermercado Tottus</h4>
             {charge.map((Charge) =>
                 <p className="price-display"> $ {Charge.charge}</p>
             )}
             <div className="btn-container">
-                <Link to='/claveDinamica'>
+                <Link to='/home'>
                     <button className="btn-option2">
                         <svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M45.4283 16.8733C53.3025 24.7475 53.3025 37.554 45.4283 45.4282C37.5541 53.3024 24.7477 53.3024 16.8735 45.4282C8.99923 37.554 8.99923 24.7475 16.8734 16.8733C24.7477 8.99911 37.5541 8.99911 45.4283 16.8733ZM46.7263 15.5754C38.1165 6.96566 24.1852 6.96566 15.5755 15.5754C6.96578 24.1851 6.96578 38.1164 15.5755 46.7261C24.1852 55.3359 38.1165 55.3359 46.7263 46.7261C55.336 38.1164 55.336 24.1851 46.7263 15.5754Z" fill="white" />
@@ -108,6 +108,28 @@ function Confirmation() {
                         Autorizar Pago
 </button>
                 </Link>
+            </div>
+            <div className="container-menu">
+                <button className="vector-direction"><svg width="15" height="24" viewBox="0 0 15 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 2.82L12.1457 0L0 12L12.1457 24L15 21.18L5.72874 12L15 2.82Z" fill="white"/>
+</svg>
+</button>
+                <button className="vector-menu">
+                <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M67 35C67 52.6731 52.6731 67 35 67C17.3269 67 3 52.6731 3 35C3 17.3269 17.3269 3 35 3C52.6731 3 67 17.3269 67 35Z" fill="#1F45CB"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M70 35C70 54.33 54.33 70 35 70C15.67 70 0 54.33 0 35C0 15.67 15.67 0 35 0C54.33 0 70 15.67 70 35ZM35 67C52.6731 67 67 52.6731 67 35C67 17.3269 52.6731 3 35 3C17.3269 3 3 17.3269 3 35C3 52.6731 17.3269 67 35 67Z" fill="#EDEFF4"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M21.5 36C21.5 35.1716 22.1716 34.5 23 34.5H47C47.8284 34.5 48.5 35.1716 48.5 36C48.5 36.8284 47.8284 37.5 47 37.5H23C22.1716 37.5 21.5 36.8284 21.5 36Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M21.5 29C21.5 28.1716 22.1716 27.5 23 27.5H47C47.8284 27.5 48.5 28.1716 48.5 29C48.5 29.8284 47.8284 30.5 47 30.5H23C22.1716 30.5 21.5 29.8284 21.5 29Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M21.5 42C21.5 41.1716 22.1716 40.5 23 40.5H47C47.8284 40.5 48.5 41.1716 48.5 42C48.5 42.8284 47.8284 43.5 47 43.5H23C22.1716 43.5 21.5 42.8284 21.5 42Z" fill="white"/>
+</svg>
+
+                </button>
+                <button className="vector-direction">
+                <svg width="15" height="24" viewBox="0 0 15 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2.46532e-07 21.18L2.85425 24L15 12L2.85425 -1.06182e-06L1.85161e-06 2.82L9.27126 12L2.46532e-07 21.18Z" fill="white"/>
+</svg>
+
+                </button>
             </div>
         </div>
     )
